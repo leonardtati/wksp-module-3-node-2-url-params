@@ -1,0 +1,16 @@
+<li>
+    <div class="books">
+        <p class="books__rank"> 
+            <%/* to reference the sub classes of ranking in scss we must use the parent'div name followed by __ and the child's class name like so ranking__rank--book*/%>
+            <span class="books__rank--type">#<%=book.type%></span>
+            <span class="books__rank--cover"><%=book.imgUrl%></span>
+        </p>
+    
+        <div class= "books__artistMeta">
+            <p class="books__artistMeta--title"><%=book.title%></p>
+            <p class="books__artistMeta--author"><%=book.author%></p>
+            <p class="books__artistMeta--description"><%=book.descriptio%></p>
+            <p class="books__pubD">id: <%=book.id%><p>
+        </div>
+    </div> 
+</li>

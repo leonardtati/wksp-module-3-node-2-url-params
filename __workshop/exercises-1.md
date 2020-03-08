@@ -59,6 +59,7 @@ Time to style the `<li>`s to be a little more readable / presentable.
 - pass only those songs to the `ejs` page.
 - reuse the song partial to render the songs.
 
+
 ![](./assets/top50_1.5.png)
 
 ## 1.6 

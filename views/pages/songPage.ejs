@@ -1,0 +1,11 @@
+<% /*  I need to create this song page with its header an footer partials. and for the syling with the scss */ %>
+
+<%- include('../partials/header', {title: title})
+<div class='main'>
+    <div class='song-page'>
+         <h2 class='song-page--title'><%= song.title %></h2>
+         <p class='song-page--artist'><%= song.artist %></p>
+         <p class='song-page--stream-count'><%= song.streams %></p>
+    </div>
+</div>
+<%- include( '../partials/footer') %>

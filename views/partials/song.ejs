@@ -1,0 +1,21 @@
+<ol>
+    <% top50.forEach(song => { %>
+        
+        <li>
+            <div class="ranking">
+                <p class="ranking__rank"> 
+                    <%/* to reference the sub classes of ranking in scss we must use the parent'div name followed by __ and the child's class name like so ranking__rank*/%>
+                    <span class="ranking__rank--ranknum">#<%=song.rank%></span>
+                    <span class="ranking__rank--streamnum">(<%=song.streams%> streams)</span>
+                </p>
+            
+                <div class= "ranking__artistMeta">
+                    <p class="ranking__artistMeta--songName"><%=song.title%></p>
+                    <p class="ranking__artistMeta--artist"><%=song.artist%></p>
+                    <p class="ranking__artistMeta--pubD">Publication Date : <%=song.publicationDate%><p>
+                </div>
+            </div> 
+        </li>
+    
+    <%});%>
+    </ol>
